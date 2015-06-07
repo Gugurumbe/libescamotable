@@ -1,0 +1,25 @@
+# OASIS_START
+# DO NOT EDIT (digest: 7165567e9eeb482c8344d3d3bbacd781)
+# Ignore VCS directories, you can use the same kind of rule outside
+# OASIS_START/STOP if you want to exclude directories that contains
+# useless stuff for the build process
+<**/.svn>: -traverse
+<**/.svn>: not_hygienic
+".bzr": -traverse
+".bzr": not_hygienic
+".hg": -traverse
+".hg": not_hygienic
+".git": -traverse
+".git": not_hygienic
+"_darcs": -traverse
+"_darcs": not_hygienic
+# Library libescamotable-client
+"src/libescamotable/client/libescamotable-client.cmxs": use_libescamotable-client
+<src/libescamotable/client/*.ml{,i}>: package(eliom.client)
+<src/libescamotable/client/client/*.ml{,i}>: package(eliom.client)
+# Library libescamotable-server
+"src/libescamotable/server/libescamotable-server.cmxs": use_libescamotable-server
+<src/libescamotable/server/*.ml{,i}>: package(eliom.server)
+<src/libescamotable/server/server/*.ml{,i}>: package(eliom.server)
+# OASIS_STOP
+<src/libescamotable>: include

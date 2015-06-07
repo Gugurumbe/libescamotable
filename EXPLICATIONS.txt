@@ -1,0 +1,9 @@
+Il est très difficile de faire une bibliothèque Eliom client / serveur avec Oasis.
+
+Fichiers importants : _tags, _oasis, myocamlbuild.ml.
+
+Dans _oasis, on définit des bibliothèques dans des dossiers sans code source, d'où la nécessité du <> : include dans le _tags.
+
+À part ça, tout marche comme décrit sur https://ocsigen.org/eliom/manual/workflow-compilation#h5o-25
+
+NB : on ne peut pas faire de {type{...}} et de %variable_serveur dans le code de la bibliothèque...

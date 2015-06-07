@@ -1,0 +1,27 @@
+OASISFormat:           0.4
+Name:                  escamotable
+Version:               0.01
+Synopsis:              Simple client-server widget.
+Authors:               Vivien Kraus
+License:               LGPL-2.1 with OCaml linking exception
+Plugins:               META (0.4), StdFiles (0.4), DevFiles (0.4)
+AlphaFeatures:         ocamlbuild_more_args, compiled_setup_ml
+BuildTools:            ocamlbuild
+XOCamlbuildPluginTags: package(eliom.ocamlbuild)
+OCamlVersion: >= 4.01
+
+Library "libescamotable-client"
+  Path:       src/libescamotable/client
+  Modules:    client/Escamotable
+  BuildDepends:
+    eliom.client
+  FindlibName: libescamotable-client
+  
+Library "libescamotable-server"
+  Path:           src/libescamotable/server
+  Modules:        server/Escamotable
+  CompiledObject: best
+  BuildDepends:
+    eliom.server
+  FindlibName: libescamotable-server
+  

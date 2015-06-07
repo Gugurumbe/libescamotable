@@ -1,0 +1,12 @@
+# OASIS_START
+# DO NOT EDIT (digest: 31f119e582810b7d71be88f8dcf1bc03)
+version = "0.01"
+description = "Simple client-server widget."
+requires = "eliom.client"
+archive(byte) = "libescamotable-client.cma"
+archive(byte, plugin) = "libescamotable-client.cma"
+archive(native) = "libescamotable-client.cmxa"
+archive(native, plugin) = "libescamotable-client.cmxs"
+exists_if = "libescamotable-client.cma"
+# OASIS_STOP
+

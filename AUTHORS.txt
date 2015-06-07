@@ -1,0 +1,8 @@
+(* OASIS_START *)
+(* DO NOT EDIT (digest: 660c5d0a92faf580b5d0363c8e1d5828) *)
+
+Authors of escamotable:
+
+* Vivien Kraus
+
+(* OASIS_STOP *)
